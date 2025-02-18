@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html></html>
+<head>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+    </style>
+</head>
+<body>
+    <a href="about.html">Book thread.</a>
+    <div>
+        <img src="slides" src="book.1" alt="
+        <img src="slides" src="" alt="">
+    </div>
+    <script>
+        let index = 0;
+        function showSlides() {
+            let slides = document.querySelectorAll(".slides");
+            slides.forEach(s => s.style.display = "none");
+            slides[index = (index + 1) % slides.length].style.display = "block";
+            setTimeout(showSlides, 3000);
+        }
+        showSlides();
+    </script>
+</body>
+</html>
